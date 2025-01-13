@@ -1,0 +1,23 @@
+name: test
+
+on: [push, workflow_dispatch]
+
+jobs:
+  test:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: List available Xcode versions
+        run: ls /Applications | grep Xcode
+
+      - name: Show current version of Xcode
+        run: xcodebuild -version
+
+      - name: List available destinations
+        run: xcodebuild -scheme MiniCalendar -showdestinations
+
+      - name: Run unit and UI tests
+        run: |
+          set -o pipefail
+          xcodebuild -scheme MiniCalendar -destination 'platform=macOS,name=My Mac' test CODE_SIGNING_ALLOWED=NO | xcbeautify

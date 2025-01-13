@@ -1,0 +1,16 @@
+name: spelling
+
+permissions:
+  contents: read
+
+on: [push, workflow_dispatch]
+
+env:
+  CLICOLOR: 1
+
+jobs:
+  spelling:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: crate-ci/typos@v1.29.4

@@ -1,0 +1,11 @@
+name: lint
+
+on: [push, workflow_dispatch]
+
+jobs:
+  lint:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint
+        run: xcrun swift-format lint . --recursive --strict --parallel

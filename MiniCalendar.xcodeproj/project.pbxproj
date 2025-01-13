@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA0664712D364F6C0097407B /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = EA0664702D364F6C0097407B /* KeyboardShortcuts */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA58D9632D355B05009A3613 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA58D9492D355B04009A3613 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA58D9502D355B04009A3613;
+			remoteInfo = MiniCalendar;
+		};
+		EA58D96D2D355B05009A3613 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA58D9492D355B04009A3613 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA58D9502D355B04009A3613;
+			remoteInfo = MiniCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA4BDAC02D37C8D7007F2C06 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		EA58D9512D355B04009A3613 /* MiniCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA58D9622D355B05009A3613 /* MiniCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA58D96C2D355B05009A3613 /* MiniCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA58D97F2D355B1A009A3613 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		EA58D9802D355B32009A3613 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EAA982E12D37E1210047D7DD /* .swift-format */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-format"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EA58D9532D355B04009A3613 /* MiniCalendar */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MiniCalendar;
+			sourceTree = "<group>";
+		};
+		EA58D9652D355B05009A3613 /* MiniCalendarTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MiniCalendarTests;
+			sourceTree = "<group>";
+		};
+		EA58D96F2D355B05009A3613 /* MiniCalendarUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MiniCalendarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA58D94E2D355B04009A3613 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0664712D364F6C0097407B /* KeyboardShortcuts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA58D95F2D355B05009A3613 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA58D9692D355B05009A3613 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA58D9482D355B04009A3613 = {
+			isa = PBXGroup;
+			children = (
+				EA58D9532D355B04009A3613 /* MiniCalendar */,
+				EA58D9652D355B05009A3613 /* MiniCalendarTests */,
+				EA58D96F2D355B05009A3613 /* MiniCalendarUITests */,
+				EA58D9522D355B04009A3613 /* Products */,
+				EAA982E12D37E1210047D7DD /* .swift-format */,
+				EA58D97F2D355B1A009A3613 /* .gitignore */,
+				EA4BDAC02D37C8D7007F2C06 /* LICENSE */,
+				EA58D9802D355B32009A3613 /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		EA58D9522D355B04009A3613 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA58D9512D355B04009A3613 /* MiniCalendar.app */,
+				EA58D9622D355B05009A3613 /* MiniCalendarTests.xctest */,
+				EA58D96C2D355B05009A3613 /* MiniCalendarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA58D9502D355B04009A3613 /* MiniCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA58D9762D355B05009A3613 /* Build configuration list for PBXNativeTarget "MiniCalendar" */;
+			buildPhases = (
+				EA58D94D2D355B04009A3613 /* Sources */,
+				EA58D94E2D355B04009A3613 /* Frameworks */,
+				EA58D94F2D355B04009A3613 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EA58D9532D355B04009A3613 /* MiniCalendar */,
+			);
+			name = MiniCalendar;
+			packageProductDependencies = (
+				EA0664702D364F6C0097407B /* KeyboardShortcuts */,
+			);
+			productName = MiniCalendar;
+			productReference = EA58D9512D355B04009A3613 /* MiniCalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA58D9612D355B05009A3613 /* MiniCalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA58D9792D355B05009A3613 /* Build configuration list for PBXNativeTarget "MiniCalendarTests" */;
+			buildPhases = (
+				EA58D95E2D355B05009A3613 /* Sources */,
+				EA58D95F2D355B05009A3613 /* Frameworks */,
+				EA58D9602D355B05009A3613 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA58D9642D355B05009A3613 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EA58D9652D355B05009A3613 /* MiniCalendarTests */,
+			);
+			name = MiniCalendarTests;
+			packageProductDependencies = (
+			);
+			productName = MiniCalendarTests;
+			productReference = EA58D9622D355B05009A3613 /* MiniCalendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA58D96B2D355B05009A3613 /* MiniCalendarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA58D97C2D355B05009A3613 /* Build configuration list for PBXNativeTarget "MiniCalendarUITests" */;
+			buildPhases = (
+				EA58D9682D355B05009A3613 /* Sources */,
+				EA58D9692D355B05009A3613 /* Frameworks */,
+				EA58D96A2D355B05009A3613 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA58D96E2D355B05009A3613 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EA58D96F2D355B05009A3613 /* MiniCalendarUITests */,
+			);
+			name = MiniCalendarUITests;
+			packageProductDependencies = (
+			);
+			productName = MiniCalendarUITests;
+			productReference = EA58D96C2D355B05009A3613 /* MiniCalendarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA58D9492D355B04009A3613 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					EA58D9502D355B04009A3613 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					EA58D9612D355B05009A3613 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = EA58D9502D355B04009A3613;
+					};
+					EA58D96B2D355B05009A3613 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = EA58D9502D355B04009A3613;
+					};
+				};
+			};
+			buildConfigurationList = EA58D94C2D355B04009A3613 /* Build configuration list for PBXProject "MiniCalendar" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = EA58D9482D355B04009A3613;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EA06646F2D364F6C0097407B /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EA58D9522D355B04009A3613 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA58D9502D355B04009A3613 /* MiniCalendar */,
+				EA58D9612D355B05009A3613 /* MiniCalendarTests */,
+				EA58D96B2D355B05009A3613 /* MiniCalendarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA58D94F2D355B04009A3613 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA58D9602D355B05009A3613 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA58D96A2D355B05009A3613 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA58D94D2D355B04009A3613 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA58D95E2D355B05009A3613 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA58D9682D355B05009A3613 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA58D9642D355B05009A3613 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA58D9502D355B04009A3613 /* MiniCalendar */;
+			targetProxy = EA58D9632D355B05009A3613 /* PBXContainerItemProxy */;
+		};
+		EA58D96E2D355B05009A3613 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA58D9502D355B04009A3613 /* MiniCalendar */;
+			targetProxy = EA58D96D2D355B05009A3613 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EA58D9742D355B05009A3613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA58D9752D355B05009A3613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		EA58D9772D355B05009A3613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = MiniCalendar/MiniCalendar.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MiniCalendar/Preview Content\"";
+				DEVELOPMENT_TEAM = CK6Q33D9LU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mini Calendar";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenkaiyn.MiniCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EA58D9782D355B05009A3613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = MiniCalendar/MiniCalendar.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MiniCalendar/Preview Content\"";
+				DEVELOPMENT_TEAM = CK6Q33D9LU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mini Calendar";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenkaiyn.MiniCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EA58D97A2D355B05009A3613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CK6Q33D9LU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenkaiyn.MiniCalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniCalendar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MiniCalendar";
+			};
+			name = Debug;
+		};
+		EA58D97B2D355B05009A3613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CK6Q33D9LU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenkaiyn.MiniCalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniCalendar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MiniCalendar";
+			};
+			name = Release;
+		};
+		EA58D97D2D355B05009A3613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CK6Q33D9LU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenkaiyn.MiniCalendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MiniCalendar;
+			};
+			name = Debug;
+		};
+		EA58D97E2D355B05009A3613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CK6Q33D9LU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenkaiyn.MiniCalendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MiniCalendar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA58D94C2D355B04009A3613 /* Build configuration list for PBXProject "MiniCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA58D9742D355B05009A3613 /* Debug */,
+				EA58D9752D355B05009A3613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA58D9762D355B05009A3613 /* Build configuration list for PBXNativeTarget "MiniCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA58D9772D355B05009A3613 /* Debug */,
+				EA58D9782D355B05009A3613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA58D9792D355B05009A3613 /* Build configuration list for PBXNativeTarget "MiniCalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA58D97A2D355B05009A3613 /* Debug */,
+				EA58D97B2D355B05009A3613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA58D97C2D355B05009A3613 /* Build configuration list for PBXNativeTarget "MiniCalendarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA58D97D2D355B05009A3613 /* Debug */,
+				EA58D97E2D355B05009A3613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA06646F2D364F6C0097407B /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA0664702D364F6C0097407B /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA06646F2D364F6C0097407B /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EA58D9492D355B04009A3613 /* Project object */;
+}
