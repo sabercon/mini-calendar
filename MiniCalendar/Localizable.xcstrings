@@ -7,22 +7,68 @@
     "%lld" : {
 
     },
-    "Go Backward" : {
+    "⌘," : {
+
+    },
+    "⌘q" : {
+
+    },
+    "Built-in Shortcuts" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "上个月"
+            "value" : "内置快捷键"
           }
         }
       }
     },
-    "Go Forward" : {
+    "Close window" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "下个月"
+            "value" : "关闭窗口"
+          }
+        }
+      }
+    },
+    "Current month" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当前月份"
+          }
+        }
+      }
+    },
+    "Customized Shortcuts" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自定义快捷键"
+          }
+        }
+      }
+    },
+    "Esc ⎋" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "退出键 ⎋"
+          }
+        }
+      }
+    },
+    "General" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通用"
           }
         }
       }
@@ -37,6 +83,16 @@
         }
       }
     },
+    "Left arrow ←" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "左方向键 ←"
+          }
+        }
+      }
+    },
     "Mini Calendar" : {
       "localizations" : {
         "zh-Hans" : {
@@ -47,42 +103,52 @@
         }
       }
     },
-    "Open Settings Page" : {
+    "Next month" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "打开配置页面"
+            "value" : "下个月份"
           }
         }
       }
     },
-    "Reset" : {
+    "Open preferences" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "重置"
+            "value" : "打开偏好设定"
           }
         }
       }
     },
-    "Reset to today" : {
+    "Previous month" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "重置到当前日期"
+            "value" : "上个月份"
           }
         }
       }
     },
-    "Settings" : {
+    "Quit" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "设置"
+            "value" : "退出"
+          }
+        }
+      }
+    },
+    "Right arrow →" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "右方向键 →"
           }
         }
       }
@@ -93,6 +159,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "显示农历"
+          }
+        }
+      }
+    },
+    "Space ␣" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "空格键 ␣"
           }
         }
       }

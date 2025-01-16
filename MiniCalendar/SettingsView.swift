@@ -25,16 +25,25 @@ struct SettingsView: View {
 
     var body: some View {
         Form {
-            Section {
+            Section("General") {
                 Toggle("Launch at login", isOn: $launchAtLogin)
                     .onChange(of: launchAtLogin, toggleLaunchAtLogin)
 
                 Toggle("Show Chinese calendar", isOn: $showChineseCalendar)
             }
 
-            Section {
+            Section("Customized Shortcuts") {
                 KeyboardShortcuts
                     .Recorder("Toggle calendar", name: .toggleCalendar)
+            }
+
+            Section("Built-in Shortcuts") {
+                shortcutLine(name: "Previous month", shortcut: "Left arrow ←")
+                shortcutLine(name: "Next month", shortcut: "Right arrow →")
+                shortcutLine(name: "Current month", shortcut: "Space ␣")
+                shortcutLine(name: "Close window", shortcut: "Esc ⎋")
+                shortcutLine(name: "Open preferences", shortcut: "⌘,")
+                shortcutLine(name: "Quit", shortcut: "⌘q")
             }
         }
         .formStyle(.grouped)
@@ -54,9 +63,17 @@ struct SettingsView: View {
             launchAtLogin = oldState  // Revert the toggle if operation fails
         }
     }
+
+    private func shortcutLine(name: LocalizedStringKey, shortcut: LocalizedStringKey) -> some View {
+        HStack {
+            Text(name)
+            Spacer()
+            Text(shortcut)
+        }
+    }
 }
 
 #Preview {
     SettingsView()
-        .frame(maxWidth: 400, maxHeight: 400)
+        .frame(maxWidth: 400, minHeight: 550)
 }

@@ -12,8 +12,7 @@ struct CalendarView: View {
     @AppStorage(SettingKeys.showChineseCalendar.rawValue)
     private var showChineseCalendar = true
 
-    @Environment(\.openSettings)
-    private var openSettings
+    @Environment(\.openSettings) private var openSettings
 
     @State private var viewModel = CalendarViewModel()
 
@@ -40,34 +39,37 @@ struct CalendarView: View {
 
     private var controlBar: some View {
         HStack {
-            Button("Reset", systemImage: "arrow.clockwise") {
+            Button("Current month", systemImage: "arrow.clockwise") {
                 viewModel.resetMonth()
             }
             .handCursorOnHover()
-            .help("Reset to today")
+            .keyboardShortcut(.space, modifiers: [])
+            .help("Current month")
             Spacer()
 
-            Button("Go Backward", systemImage: "chevron.backward") {
+            Button("Previous month", systemImage: "chevron.backward") {
                 viewModel.moveMonth(by: -1)
             }
             .handCursorOnHover()
+            .keyboardShortcut(.leftArrow, modifiers: [])
             Text(viewModel.yearMonth)
                 .font(.title3)
                 .fontWeight(.heavy)
                 .foregroundStyle(.primary)
                 .frame(minWidth: 130)
-            Button("Go Forward", systemImage: "chevron.forward") {
+            Button("Next month", systemImage: "chevron.forward") {
                 viewModel.moveMonth(by: 1)
             }
             .handCursorOnHover()
+            .keyboardShortcut(.rightArrow, modifiers: [])
 
             Spacer()
-            Button("Settings", systemImage: "ellipsis.circle") {
+            Button("Open preferences", systemImage: "ellipsis.circle") {
                 NSApplication.shared.activate(ignoringOtherApps: true)
                 openSettings()
             }
             .handCursorOnHover()
-            .help("Open Settings Page")
+            .help("Open preferences")
         }
         .labelStyle(.iconOnly)
         .buttonStyle(.borderless)
