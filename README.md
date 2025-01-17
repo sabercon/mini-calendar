@@ -29,4 +29,4 @@ Click the icon to open the calendar.
 ## Screenshots
 
 <img src="https://github.com/user-attachments/assets/45a6f526-c7e0-428b-8f45-0f71b20f2575" align="center" width="350"/>
-<img src="https://github.com/user-attachments/assets/79b4f62c-36e5-4efd-a8d2-2b173d209d32" align="center" width="450"/>
+<img src="https://github.com/user-attachments/assets/0b9cc8cf-efc6-4ee0-bec0-de85d44bd9df" align="center" width="450"/>
