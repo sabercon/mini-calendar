@@ -6,19 +6,16 @@
 //
 
 import KeyboardShortcuts
+import LaunchAtLogin
 import ServiceManagement
 import SwiftUI
 
 enum SettingKeys: String {
-    case launchAtLogin
     case showChineseCalendar
     case toggleCalendar
 }
 
 struct SettingsView: View {
-
-    @AppStorage(SettingKeys.launchAtLogin.rawValue)
-    private var launchAtLogin = false
 
     @AppStorage(SettingKeys.showChineseCalendar.rawValue)
     private var showChineseCalendar = true
@@ -26,8 +23,7 @@ struct SettingsView: View {
     var body: some View {
         Form {
             Section("General") {
-                Toggle("Launch at login", isOn: $launchAtLogin)
-                    .onChange(of: launchAtLogin, toggleLaunchAtLogin)
+                LaunchAtLogin.Toggle("Launch at login" as LocalizedStringKey)
 
                 Toggle("Show Chinese calendar", isOn: $showChineseCalendar)
             }
@@ -38,33 +34,20 @@ struct SettingsView: View {
             }
 
             Section("Built-in Shortcuts") {
-                shortcutLine(name: "Previous month", shortcut: "Left arrow ←")
-                shortcutLine(name: "Next month", shortcut: "Right arrow →")
-                shortcutLine(name: "Current month", shortcut: "Space ␣")
-                shortcutLine(name: "Close window", shortcut: "Esc ⎋")
-                shortcutLine(name: "Open preferences", shortcut: "⌘,")
-                shortcutLine(name: "Quit", shortcut: "⌘q")
+                shortcutTip(name: "Previous month", shortcut: "Left arrow ←")
+                shortcutTip(name: "Next month", shortcut: "Right arrow →")
+                shortcutTip(name: "Current month", shortcut: "Space ␣")
+                shortcutTip(name: "Close window", shortcut: "Esc ⎋")
+                shortcutTip(name: "Open preferences", shortcut: "⌘,")
+                shortcutTip(name: "Quit", shortcut: "⌘q")
             }
         }
         .formStyle(.grouped)
+        .frame(idealWidth: 400)
+        .fixedSize()
     }
 
-    private func toggleLaunchAtLogin(oldState: Bool, newState: Bool) {
-        do {
-            if newState {
-                try SMAppService.mainApp.register()
-            } else {
-                try SMAppService.mainApp.unregister()
-            }
-        } catch {
-            print(
-                "Failed to \(newState ? "register" : "unregister") launch at login: \(error)"
-            )
-            launchAtLogin = oldState  // Revert the toggle if operation fails
-        }
-    }
-
-    private func shortcutLine(name: LocalizedStringKey, shortcut: LocalizedStringKey) -> some View {
+    private func shortcutTip(name: LocalizedStringKey, shortcut: LocalizedStringKey) -> some View {
         HStack {
             Text(name)
             Spacer()
@@ -75,5 +58,4 @@ struct SettingsView: View {
 
 #Preview {
     SettingsView()
-        .frame(maxWidth: 400, minHeight: 550)
 }

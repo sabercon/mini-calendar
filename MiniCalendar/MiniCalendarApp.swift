@@ -22,7 +22,6 @@ struct MiniCalendarApp: App {
         Settings {
             SettingsView()
         }
-        .defaultSize(width: 400, height: 550)
     }
 }
 
