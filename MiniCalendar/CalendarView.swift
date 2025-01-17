@@ -21,7 +21,7 @@ struct CalendarView: View {
             controlBar
                 .padding(.bottom)
 
-            Grid(horizontalSpacing: 16, verticalSpacing: 16) {
+            Grid(horizontalSpacing: 12, verticalSpacing: 16) {
                 calendarHeader
 
                 let items = viewModel.dateItems
@@ -97,8 +97,12 @@ struct CalendarView: View {
                     Text("\(item.day)")
                         .font(.headline)
                     if showChineseCalendar {
-                        Text("\(item.lunarDay)")
-                            .font(.caption2)
+                        ZStack {
+                            Text("\(item.lunarDay)")
+                            // Make sure all the boxes have the same size 😂
+                            Text(verbatim: "三个字").opacity(0)
+                        }
+                        .font(.caption2)
                     }
                 }
                 .opacity(viewModel.isInCurrentMonth(item) ? 1 : 0.4)

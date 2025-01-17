@@ -51,6 +51,16 @@ final class CalendarViewModel {
 }
 
 struct DateItem: Identifiable {
+    private static let lunarFormatter = {
+        let fmt = DateFormatter()
+        fmt.calendar = Calendar.lunar
+        fmt.locale = Locale(identifier: "zh_CN")
+        fmt.dateStyle = .medium
+        return fmt
+    }()
+
+    private static let lunarPattern = /\d+年(\w+月)(\w+)/
+
     let id = UUID()
     let date: Date
 
@@ -59,9 +69,13 @@ struct DateItem: Identifiable {
     }
 
     var lunarDay: String {
-        let lunarString = Calendar.lunarFormatter.string(from: date)
-        let month = lunarString.suffix(4).prefix(2)
-        let day = lunarString.suffix(2)
-        return String("初一" == day ? month : day)
+        let lunarDateString = Self.lunarFormatter.string(from: date)
+        if let match = lunarDateString.wholeMatch(of: Self.lunarPattern) {
+            let (_, month, day) = match.output
+            return String("初一" == day ? month : day)
+        } else {
+            print("Invalid lunar date string: \(lunarDateString)")
+            return ""
+        }
     }
 }

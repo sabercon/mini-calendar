@@ -28,14 +28,6 @@ extension Calendar {
         return cal
     }()
 
-    static let lunarFormatter = {
-        let fmt = DateFormatter()
-        fmt.calendar = lunar
-        fmt.locale = Locale(identifier: "zh_CN")
-        fmt.dateStyle = .medium
-        return fmt
-    }()
-
     func startOfMonth(for date: Date) -> Date {
         self.date(from: dateComponents([.year, .month], from: date))!
     }
