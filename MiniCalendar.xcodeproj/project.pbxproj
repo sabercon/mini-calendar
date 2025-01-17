@@ -29,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA34F4642D3B318F0018A4C3 /* README.zh-CN.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "README.zh-CN.md"; sourceTree = "<group>"; };
 		EA4BDAC02D37C8D7007F2C06 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EA58D9512D355B04009A3613 /* MiniCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA58D9622D355B05009A3613 /* MiniCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +95,7 @@
 				EA58D97F2D355B1A009A3613 /* .gitignore */,
 				EA4BDAC02D37C8D7007F2C06 /* LICENSE */,
 				EA58D9802D355B32009A3613 /* README.md */,
+				EA34F4642D3B318F0018A4C3 /* README.zh-CN.md */,
 			);
 			sourceTree = "<group>";
 		};

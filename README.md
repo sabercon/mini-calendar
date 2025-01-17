@@ -4,7 +4,9 @@
   <p>
     <b>Calendar in your menu bar</b>
   </p>
-  <br>
+  <p>
+    <a href="README.md">English</a> | <a href="README.zh-CN.md">简体中文</a>
+  </p>
   <br>
   <br>
 </div>
@@ -14,7 +16,7 @@ A menu bar calendar that displays both the Gregorian calendar and the traditiona
 ## Installation
 
 - **Requirements**: macOS 14 or later.
-- **Download**: Get the latest version from the [releases](https://github.com/sabercon/mini-calendar/releases/latest) page.
+- **Download**: Get the latest version of `MiniCalendar_x.x.x.dmg` from the [Releases](https://github.com/sabercon/mini-calendar/releases/latest) page.
 
 ## Usage
 
