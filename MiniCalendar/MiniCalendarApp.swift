@@ -61,6 +61,6 @@ final class AppState {
 
     private static func menuBarWindow() -> NSWindow? {
         NSApplication.shared.windows
-            .first(where: { $0.className.contains("MenuBarExtraWindow") })
+            .first { $0.className.contains("MenuBarExtraWindow") }
     }
 }

@@ -35,6 +35,13 @@ struct CalendarView: View {
         .padding()
         .padding([.horizontal, .bottom])
         .fixedSize()
+        .onReceive(
+            NotificationCenter.default.publisher(for: NSWindow.didChangeOcclusionStateNotification)
+                .compactMap { $0.object as? NSWindow }
+                .filter { $0.className.contains("MenuBarExtraWindow") }
+        ) { _ in
+            viewModel.resetMonth()
+        }
     }
 
     private var controlBar: some View {
